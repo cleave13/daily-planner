@@ -13,6 +13,23 @@ textarea {
   padding: 10px;
 }
 
+td {
+    position:relative
+}
+
+td > input {
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
