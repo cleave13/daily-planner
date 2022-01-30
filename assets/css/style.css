@@ -1,13 +1,16 @@
+/* Sets primary text attributes for all elements */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+/* Sets the table data to relative positioning so that the input can be absolutely positioned */
 td {
     position:relative;
 }
 
+/* Styles the text input to take up the entire cell of the table */
 td > input {
     position: absolute;
     display: block;
@@ -21,6 +24,7 @@ td > input {
     box-sizing: border-box;
 }
 
+/*sets the text size and border attributes for the jumbotron */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -29,6 +33,7 @@ td > input {
   border-bottom: 10px solid black;
 }
 
+/* Sets background colors for all time-based classes. These are applied dynamically by the JavaScript */
 .past {
   background-color: #d3d3d3;
 }
@@ -41,6 +46,7 @@ td > input {
   background-color: #77dd77;
 }
 
+/* Styles the save button and its hover behavior */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
