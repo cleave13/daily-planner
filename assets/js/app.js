@@ -1,4 +1,5 @@
-//variables
+//VARIABLES
+
 //Declare all variables from DOM and local storage elements using jQuery.
 const textInputEls = $('input');
 const saveBtnEl = $('.fa-save');
@@ -6,7 +7,7 @@ const tableRowEls = $('tr');
 const tableInputEls = $('input');
 let savedEntries = [];
 
-//functions
+//FUNCTIONS
 
 //Initializes the application
 function init() {
@@ -81,9 +82,9 @@ function saveInput(event) {
     localStorage.setItem('calendarItems', JSON.stringify(savedEntries));
 };
 
-//special functions
+//EVENT LISTENERS
 saveBtnEl.click(saveInput);
 
 
-//logic
+//LOGIC
 init();
